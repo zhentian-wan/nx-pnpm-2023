@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "@cbi/shared-ui",
+  "main": "dist/index.js",
+  "description": "Shared UI components",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.4"
+  }
+}

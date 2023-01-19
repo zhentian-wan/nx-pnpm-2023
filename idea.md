@@ -16,3 +16,4 @@ Run the app from root folder
 Add package to app/lib by using pnpm
 
 `pnpm add --filter @cbi/shared-ui react`
+`pnpm add --filter @cbi/shared-ui typescript -D`

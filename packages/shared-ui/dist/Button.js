@@ -14,7 +14,7 @@ exports.__esModule = true;
 exports.Button = void 0;
 var jsx_runtime_1 = require("react/jsx-runtime");
 function Button(props) {
-    return (0, jsx_runtime_1.jsx)("button", __assign({ onClick: function () { return props.onClick(); } }, { children: props.children }));
+    return ((0, jsx_runtime_1.jsx)("button", __assign({ style: { color: "red" }, onClick: function () { return props.onClick(); } }, { children: props.children })));
 }
 exports.Button = Button;
 exports["default"] = Button;

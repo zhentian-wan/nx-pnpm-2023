@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "pnpm run -r build",
     "client:dev": "pnpm --filter @cbi/client dev",
     "client:build": "pnpm --filter @cbi/client build",
     "client:test": "pnpm --filter @cbi/client test",

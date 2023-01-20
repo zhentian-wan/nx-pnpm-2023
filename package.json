@@ -4,14 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm run -r build",
+    "build:pnpm": "pnpm run -r build",
+    "build": "npx nx run-many --target=build",
     "client:dev": "pnpm --filter @cbi/client dev",
-    "client:build": "pnpm --filter @cbi/client build",
+    "client:build:pnpm": "pnpm --filter @cbi/client build",
+    "client:build": "npx nx build @cbi/client",
     "client:test": "pnpm --filter @cbi/client test",
-    "shared:build": "pnpm --filter @cbi/shared-ui build",
+    "shared:build:pnpm": "pnpm --filter @cbi/shared-ui build",
+    "shared:build": "npx nx build @cbi/shared-ui",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nx": "15.5.2",
+    "@nrwl/nx-cloud": "latest"
+  }
 }

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "graph": "npx nx graph",
     "build:pnpm": "pnpm run -r build",
     "build": "npx nx run-many --target=build",
     "client:dev": "pnpm --filter @cbi/client dev",

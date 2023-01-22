@@ -14,7 +14,12 @@
     "build": {
       /* Ignore markdown file for cache, also ingore its child project markdown files */
       "inputs": ["noMarkdown", "^noMarkdown"],
-      "outputs": ["{projectRoot}/dist", "{projectRoot}/build"]
+      "outputs": ["{projectRoot}/dist", "{projectRoot}/build"],
+      "dependsOn": ["^build"]
+    },
+    "dev": {
+      // dep on shared-ui build command first
+      "dependsOn": ["^build"]
     },
     "test": {
       "inputs": ["noMarkdown", "^noMarkdown"]

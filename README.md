@@ -43,5 +43,3 @@ Can add project restriction
 Init a `nx.json` file
 
 `npx nx init`
-
-> > > > > > > ff1447a (nx cache)

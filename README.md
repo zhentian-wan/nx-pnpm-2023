@@ -43,3 +43,8 @@ Can add project restriction
 Init a `nx.json` file
 
 `npx nx init`
+
+
+### Graph
+
+`npx nx graph`
